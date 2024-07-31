@@ -1,0 +1,136 @@
+.header {
+    height: 110px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    @media(max-width: 520px){
+        height: 72px;
+    }
+    .wrapTitle {
+        padding: 5px;
+        padding-left: 18px;
+        padding-right: 18px;
+        border: 3px solid rgba(241,133,0, 0.9);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media(max-width: 520px){
+            margin-left: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        > span {
+            font-size: 42px;
+            color: rgba(241,133,0, 0.9);
+            font-weight: 800;
+            line-height: 40px;
+            @media(max-width: 520px){
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 22px;
+            }
+        }
+        .title {
+            font-size: 28px;
+            color: yellowgreen;
+            font-weight: 800;
+            line-height: 28px;
+            @media(max-width: 520px){
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+            }
+        }
+    }
+    
+    .logo {
+        background-size: cover; 
+        background-position: center center;
+        background-image: url(./images/sushiLogo.png);
+        width: 230px;
+        height: 110px;
+    }
+    .wrapRightBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .wrapLanguage {
+            width: 110px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .language {
+            color: rgba(241,133,0, 0.9);
+            font-size: 22px;
+            font-weight: 600;
+            cursor: pointer;
+            &:active {
+                transform: translateY(4px);
+            }
+        }
+        .selectLeng {
+            border: none;
+            outline: none;
+            font-weight: 600;
+            font-size: 18px;
+            width: 100%;
+            margin: 8px;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgba(241,133,0, 0.9);
+            color: white;
+        }
+        .wrapBasket {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+            &:active {
+                transform: translateY(6px);
+            }
+        }
+        .circle {
+            width: 38px;
+            height: 38px;
+            background-color: rgba(241,133,0, 0.9);
+            border-radius: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            @media(max-width: 520px){
+                margin-right: 10px;
+                width: 24px;
+                height: 24px;
+                border-radius: 24px;
+            }
+            > span {
+                font-size: 22px;
+                font-weight: 600;
+                color: white;
+                @media(max-width: 520px){
+                    font-size: 18px;
+                }
+            }
+        }
+        .basket {
+            color: rgb(208,25,9);
+            font-size: 44px;
+            margin-right: 5px;
+            margin-left: 15px;
+            @media(max-width: 520px){
+                font-size: 32px;
+                margin-left: 5px;
+            }
+        }
+    }
+    
+}

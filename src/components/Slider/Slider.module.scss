@@ -1,0 +1,9 @@
+.wrapSlider {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 110px;
+    @media(max-width: 520px){
+        margin-top: 72px;
+    }
+}

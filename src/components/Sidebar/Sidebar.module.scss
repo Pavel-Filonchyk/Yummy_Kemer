@@ -1,0 +1,71 @@
+.sideBar {
+    width: 180px;
+    position: absolute;
+    top: 108px;
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    background-color: #EDF2F8;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    @media(max-width: 520px){
+       top: 72px
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        border-radius: 8px;
+        margin: 10px;
+        margin-bottom: 3px;
+        
+        cursor: pointer;
+        box-shadow: 0 0 5px 4px rgba(0,0,0,0.5);
+        &:active {
+            box-shadow: 0 5px gray;
+            transform: translateY(4px);
+        }
+        width: 90%;
+        height: auto;
+    }
+    
+    .wrapDish {
+        
+    }
+    .wrapNameDish {
+        width: 128px;
+        height: 30px;
+        background-color: white;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: -40px;
+        margin-left: 25px;
+        
+        .nameDish {
+            color: rgba(241,133,0, 0.9);
+            font-size: 15px;
+            font-weight: 600;
+            @media(max-width: 520px){
+                font-size: 15px;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+.burger {
+  position: absolute;
+  font-size: 34px;
+  right: -34px; 
+  color: #474A51;
+  z-index: 100;
+  @media(max-width: 520px){
+    top: 88px;
+    font-size: 26px;
+    right: -26px;
+ }
+}
